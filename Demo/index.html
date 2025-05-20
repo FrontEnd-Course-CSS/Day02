@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css - Day02</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+
+<body>
+    <!-- 05 - Sticky -> يعني هيتحرك في الاتجاهات الاربعه بناء على مكانه الاصلي ومبيسيبش مكانه بس هيجي عند نقطه معينه ويثبت Relative&Fixed هو مزيج ما بين ال  -->
+
+    <!-- *Ex01* -->
+    <!-- <div class="stickyParent">
+        <div class="childA">Sticky header</div>
+        <div class="childB">Scroll Down</div>
+    </div> -->
+
+    <!-- *Ex02* -->
+    <div class="section">
+        <div class="sticky-title">🔒 Sticky Title (Section 1)</div>
+        <p>Scroll down... this title will stick at the top of its section as you scroll.</p>
+        <p>More content...</p>
+        <p style="height: 800px;">Extra space to scroll inside the section</p>
+    </div>
+
+    <div class="section">
+        <div class="sticky-title">🔒 Sticky Title (Section 2)</div>
+        <p>This one does the same inside its own section.</p>
+        <p style="height: 800px;">Keep scrolling...</p>
+    </div>
+    <!-- display -> inline [the element with "inline" display not take the all row (can add another inline element beside it)]-->
+    <img src="./Assets/images/cat.jpeg" alt="" width="150px">
+    <img src="./Assets/images/cat.jpeg" alt="" width="150px">
+    <img src="./Assets/images/cat.jpeg" alt="" width="150px">
+    <img src="./Assets/images/cat.jpeg" alt="" width="150px">
+    <img src="./Assets/images/cat.jpeg" alt="" width="150px">
+    <img src="./Assets/images/cat.jpeg" alt="" width="150px">
+
+    <!-- display -> block [the element with "block" display take the all row (can't add another element beside it)]-->
+    <p>Eslam</p>
+    <p>Eslam</p>
+    <p>Eslam</p>
+    <p>Eslam</p>
+    <p>Eslam</p>
+    <p>Eslam</p>
+
+    <a href="#">Google</a>
+    <a href="#">Facebook</a>
+    <a href="#">X</a>
+    <a href="#">Linkedin</a>
+    <a href="#">Dev</a>
+
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+
+    <!-- division قسم -->
+    <div></div>
+    <!-- contain related elements (has block effect) anything came after div will be at the bottom of it because it has block display effect-->
+    <!-- use <div></div> to divide the page into sections and every section has display block -->
+    <span></span>
+    <!-- use <span></span> to highlight specific words inside like paragraph Without a new line - because span has inline display  -->
+    <div class="div01">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quam dolorem pariatur quidem alias fugiat, unde
+            vitae ullam sit sapiente error repellendus. Quia earum harum magni, fugiat tenetur voluptatibus
+            consequuntur.</p>
+    </div>
+    <div class="div02">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quam dolorem pariatur quidem alias fugiat, unde
+            vitae ullam sit sapiente error repellendus. Quia earum harum magni, fugiat tenetur voluptatibus
+            consequuntur.</p>
+    </div>
+    <div class="div03">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quam dolorem pariatur quidem alias fugiat, unde
+            vitae ullam sit sapiente error repellendus. Quia earum harum magni, fugiat tenetur voluptatibus
+            consequuntur.</p>
+    </div>
+    <div class="div04">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quam dolorem pariatur quidem alias fugiat, unde
+            vitae ullam sit sapiente error repellendus. Quia earum harum magni, fugiat tenetur voluptatibus
+            consequuntur.</p>
+    </div>
+    <div class="div05">
+        <img src="./Assets/images/cat.jpeg" alt="cat" width="150px">
+        <img src="./Assets/images/cat.jpeg" alt="cat" width="150px">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto ipsam saepe, impedit nobis
+            maiores quam natus quas ea esse sed aut excepturi reprehenderit tenetur deleniti inventore quae minima nisi?
+        </p>
+    </div>
+
+    <!-- Span -> used to highlight specific word inside paragraph and make style css on it without use like <h3></h3> because it's block tag - span is inline tag -->
+    <!-- Why not use like <b></b> or <i></i> or <mark></mark> ? because those elements are make inline style and we now don't use this approach to make style now. -->
+    <p>Eslam Ashraf Abdelazem is graduated from <span>faculty of computer & information science</span> mansoura
+        university</p>
+
+    <hr />
+
+    <p class="paragraphE">Elsaadany</p>
+    <p class="paragraphE">Elsaadany</p>
+    <p class="paragraphE">Elsaadany</p>
+    <p class="paragraphE">Elsaadany</p>
+    <p class="paragraphE">Elsaadany</p>
+
+    <img class="imgB" src="./Assets/images/cat.jpeg" alt="cat" width="150px">
+    <img class="imgB" src="./Assets/images/cat.jpeg" alt="cat" width="150px">
+    <img class="imgB" src="./Assets/images/cat.jpeg" alt="cat" width="150px">
+    <img class="imgB" src="./Assets/images/cat.jpeg" alt="cat" width="150px">
+    <img class="imgB" src="./Assets/images/cat.jpeg" alt="cat" width="150px">
+
+    <!-- أي عنصر عشان يظهر في المتصفح لازم اكون حاطط فيه محتوى أو مديله ارتفاع بال سي اس اس علشان يظهر
+      العرض هيبقى افتراضي عرض الصفحه كلها لو العنصر بلوك ، لو العنصر مش بلوك فلازم تحط فيه كونتنت عشان يظهر عشان بيبقى العرض بتاعه على قد الكونتنت -->
+    <!-- "div" affected by width&height css values -->
+    <!-- "span"  not affected by width&height properties css values -->
+    <!-- So, Any element that has display:inline not affected by width&height properties css styles -->
+    <!-- And, Any element that has display:block affected by width&height properties css styles -->
+    <div class="block">
+
+    </div>
+    <img class="imgC" src="./Assets/images/cat.jpeg" alt="">
+    <span class="span-inline">
+        Eslam Ashraf
+    </span>
+    <span class="span-inline">
+        Eslam Ashraf
+    </span>
+    <!-- inline-block -->
+    <span class="span-inlineBlock">
+        Eslam Ashraf
+    </span>
+    <span class="span-inlineBlock">
+        Eslam Ashraf
+    </span>
+    <br>
+    <img class="imgDisplayNone" src="./Assets/images/cat.jpeg" alt="cat" width="150px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum eius officia amet fugiat molestias,
+        fugit id ratione debitis fuga, deserunt atque rerum! Odio modi doloremque architecto quod quae veritatis!</p>
+
+    <div class="parent">
+        <div class="box"></div>
+        <br>
+        <div class="box"></div>
+        <br>
+        <div class="box"></div>
+        <br>
+    </div>
+
+
+    <!-- Position -->
+    <!-- 01 - static -->
+    <div class="xStatic"></div>
+    <div class="yStatic"></div>
+    <br />
+    <!-- 02 - relative -->
+    <div class="xRelative"></div>
+    <div class="yRelative"></div>
+    <br />
+    <!-- 03 - absolute -->
+    <div class="xAbsolute"></div>
+    <div class="yAbsolute"></div>
+
+    <br />
+
+    <div class="parentt">
+        <div class="child">
+            <div class="grandson"></div>
+        </div>
+    </div>
+
+    <div class="zero">
+        <div class="a">
+            <div class="b">
+                <div class="c"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="X">
+        <div class="Y"></div>
+    </div>
+    <div class="R"></div>
+    <!-- 04 - Fixed ->  العنصر بيفضل ثابت في الفيو بورت حتى لو انت بتعمل سكرول  -->
+    <div class="fixed"></div>
+
+    <!-- 05 - Sticky -> يعني هيتحرك في الاتجاهات الاربعه بناء على مكانه الاصلي بس هيجي عند نقطه معينه ويثبت Relative&Fixed هو مزيج ما بين ال  -->
+    <!-- <div class="stickyParent">
+        <div>Sticky header</div>
+        <div>Scroll Down</div>
+    </div> -->
+
+    <div class="P01"></div>
+    <div class="C02"></div>
+    <div class="C03"></div>
+
+
+
+</body>
+
+</html>

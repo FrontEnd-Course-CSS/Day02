@@ -1,0 +1,302 @@
+.div01 {
+    background-color: aqua;
+}
+
+.div02 {
+    background-color: red;
+}
+
+.div03 {
+    background-color: blue;
+}
+
+.div04 {
+    background-color: burlywood;
+}
+
+.div05 {
+    background-color: brown;
+}
+
+span {
+    font-weight: bold;
+    color: red;
+}
+
+.paragraphE {
+    display: inline;
+}
+
+.imgB {
+    display: block;
+}
+
+.block {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+.span-inline {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    color: black;
+}
+
+/* img -> is inline-block tag which mean is inline and affected by width&height when add width&height to it using CSS like block elements */
+.imgC {
+    width: 250px;
+}
+
+.span-inlineBlock {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    color: black;
+    display: inline-block;
+}
+
+.imgDisplayNone {
+    /*display: none -> Will be hidden from browser and another elements after this element will take place of it*/
+    /* display: none; */
+
+    /* opacity: 0 -> Will reserve it's place but it's hidden - another element after it can't take place of it*/
+    /* the element is exist but it's transparent شفاف */
+    opacity: 0;
+}
+
+.parent {
+    /* display: flex -> To control the direction of elements and arrange them horizontal and vertical */
+    display: flex;
+    /* display: grid -> For Divide the page into columns and rows to make it easier to place elements correctly on the page and divide them accurately. */
+    display: grid;
+}
+
+.box {
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+}
+
+/*
+display:block; -> Make the element have the block value so that it takes up the entire width of the row it is in and nothing comes next to it
+display:inline; -> Make the element have the inline value so that it takes only the width of it's content and not affected by width&height properties and could inline elements came beside it 
+display:inline-block; -> Make the element have the inline value and block value so that it affected by width&height properties and could inline elements came beside it 
+display:none; -> Make the element hidden from the page and another elements after it take place of it.
+opacity:0; ->  Make the element hidden from the page but take it's space|place and another elements after it can't take place of it.
+display:flex; -> to control direction and arrangement of the elements
+display:grid; -> Divide the page into columns and rows to make it easier to place elements correctly on the page and divide them accurately.
+*/
+
+/* *Position* -> To move the element in the four directions */
+/* 01 -> position:static; the element will not affected if you make top-right-left-bottom by css when position of it is static*/
+.xStatic {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    /* margin-left: 50px; */
+    position: static;
+    /*default value*/
+    top: 100px;
+    display: inline-block;
+}
+
+.yStatic {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    /* margin-left: 50px; */
+    display: inline-block;
+}
+
+/* 02 -> position:relative; the element will affected if you make top-right-left-bottom by css when position of it is relative and will move from its original location with the value you gave to the property. keep it's space reserved not another elements after it take this space */
+.xRelative {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 50px;
+    display: inline-block;
+}
+
+.yRelative {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+/* 02 -> position:absolute; بيتحرك مطلق الحريه بناء على حدود باباه ، وبيسيب مكانه وأي عنصر تاني ممكن ياخد مكانه */
+.xAbsolute {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+}
+
+.yAbsolute {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+.parentt {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.child {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.grandson {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    bottom: 20px;
+}
+
+.zero {
+    width: 600px;
+    height: 450px;
+    background-color: blueviolet;
+    position: relative;
+    /*Important for the father to let children move based on it's border*/
+    top: 30px;
+}
+
+.a {
+    width: 500px;
+    height: 350px;
+    /* border: 1px solid red; */
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.b {
+    width: 400px;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+    /* right: 0px; */
+}
+
+.c {
+    width: 300px;
+    height: 150px;
+    background-color: yellow;
+    position: absolute;
+    right: 0px;
+}
+
+.X {
+    position: relative;
+    top: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.Y {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    right: 0px;
+}
+
+.R {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.fixed {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+.stickyParent {
+    background-color: red;
+    text-align: center;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.childA {
+    position: sticky;
+    top: 0px;
+    background-color: orange;
+}
+
+.childB {
+    height: 700px;
+    /* background-color: aqua; */
+}
+
+.section {
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #aaa;
+    margin-bottom: 30px;
+    background: #f9f9f9;
+}
+
+.sticky-title {
+    position: sticky;
+    top: 0px;
+    /* وثابت لحد م حدود الأب بتاعك تخلصfixedبتاع الأب بتاعك زيرو خليك topليعني متسيبش مكانك خالص وتعالى في مكانك الطبيعي يعني لو قبلك حاجه او بعدك حاجه متخليهومش ياخدوا مكانك بس لما تعمل سكرول و يوصل بينك وبين ال  Relative  معناها خليك */
+    background: yellow;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #999;
+}
+
+/* z-index work only with elements that take position value (relative or absolute) and elements are on each others*/
+.P01 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.C02 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.C03 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    z-index: 3;
+}
