@@ -1,3 +1,10 @@
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* وجيت عملت بادينج ومارجين يفضل العنصر طولع وعرضه زي ماهو حتى لما زودت البادينج والمارجين element=>width&heightدي علشان لو انا عاطي لل  */
+    /* box-sizing: border-box; */
+}
+
 .div01 {
     background-color: aqua;
 }
@@ -276,7 +283,7 @@ display:grid; -> Divide the page into columns and rows to make it easier to plac
     height: 100px;
     background-color: green;
     position: absolute;
-    top:10px;
+    top: 10px;
     left: 10px;
     z-index: 2;
 }
@@ -286,7 +293,7 @@ display:grid; -> Divide the page into columns and rows to make it easier to plac
     height: 100px;
     background-color: blue;
     position: absolute;
-    top:20px;
+    top: 20px;
     left: 20px;
     z-index: 1;
 }
@@ -296,7 +303,124 @@ display:grid; -> Divide the page into columns and rows to make it easier to plac
     height: 100px;
     background-color: yellow;
     position: absolute;
-    top:30px;
+    top: 30px;
     left: 30px;
     z-index: 3;
 }
+
+ul {
+    list-style-type: georgian;
+    /* to show the numbers */
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: upper-roman;
+    /* to hide the numbers -> work only of you set padding&margin = 0 to all the document/body */
+    list-style-position: outside;
+}
+
+table {
+    margin-top: 5px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: red;
+}
+
+.abc {
+    color: blue;
+}
+
+/* pseudo class Like :hover */
+.abc:hover {
+    /* mean that when hover on this element the color of it will be green */
+    color: green;
+}
+
+.paragraphs p:first-child {
+    /* mean that the first child of type paragraph "p" will be with background color "red"  */
+    background-color: red;
+}
+
+.paragraphs p:last-child {
+    /* mean that the last child of type paragraph "p" will be with background color "fuchsia"  */
+    background-color: fuchsia;
+}
+
+.paragraphs p:nth-child(3) {
+    /* mean that the number of the child (3) of type paragraph "p" will be with background color "yellow"  */
+    background-color: yellow;
+}
+
+
+
+/* pseudo elements like :first-letter */
+.abc::first-letter {
+    color: black;
+}
+
+.cda::first-line {
+    color: darkgoldenrod;
+}
+
+.header2 {
+    color: red;
+}
+
+.header2::before {
+    /* must add content:"" attribute to let after&before work and this content not selected by mouse to make copy or paste*/
+    content: "RAM";
+    color: red;
+}
+
+.header2 ::after {
+    color: red;
+}
+
+.header3 {
+    color: blue;
+    position: relative;
+    width: fit-content;
+}
+
+.header3::before {
+    content: "";
+    color: red;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+
+.header3::after {
+    content: "";
+    color: red;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+}
+
+/* 
+    Best practice for Writing CSS
+        1- Write Css Using External Style [To make it reusable without repeating code]
+        2- Good naming for element classes [Naming Convention (Readability)]
+        3- Combination -> instead of write :
+            margin-left:10px;
+            margin-top:10px;
+            margin-right:10px;
+            margin-bottom:10px;
+
+        combine them and write:
+            margin:10px;
+        
+        4- Grouping -> if two elements has the same property value make grouping to them.
+        
+        .a,.b,.c{
+            color:red;
+        }
+
+*/
